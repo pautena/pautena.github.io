@@ -1,15 +1,15 @@
 {% if site.data.settings.portfolio-home-items %}
 <!-- portfolio -->
-<section class="section">
+<section class="section pt-0">
   <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Portfolio</h2>
+    {% for item in site.data.settings.portfolio-home-items %}
+    <div class="d-flex mt-5 project-section {% cycle 'flex-row-reverse', 'flex-row' %}">
+      <div class="col-12 col-md-6 p-5 order-2 order-sm-1">
+        <h4 class="text-uppercase col-12">{{item.name}}</h4>
+        <h3 class="col-12">{{item.title}}</h3>
+        <h4 class="col-12">{{item.description}}</h4>
       </div>
-    </div>
-    <div class="row shuffle-wrapper">
-      {% for item in site.data.settings.portfolio-home-items %}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+      <div class="col-12 col-md-6 order-1 order-sm-2 d-flex align-items-center">
         <div class="position-relative rounded hover-wrapper">
           <img src="{{ site.baseurl }}/{{ item.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
@@ -19,7 +19,13 @@
           </div>
         </div>
       </div>
-      {% endfor %}
+    </div>
+    {% endfor %}
+    <div class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
+      <h3 class="pb-3">Do you want to see more projects?</h3>
+      <a class="btn btn-primary btn-sm" href="/portfolio">
+        See more
+      </a>
     </div>
   </div>
 </section>

@@ -61,8 +61,20 @@
   right: -10px;
 }
 
-.layer-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.hero-area {
+  height: 100vh;
+  background-size: 100% 100%;
+  background-color: #000000;
+  background-image: url('/assets/images/backgrounds/bg.jpg');
+
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
 }

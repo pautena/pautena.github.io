@@ -1,17 +1,11 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross - Jekyll Portfolio Template
-logo: logo.png
-email: steve.fruits@email.com
-phone: +880 2544 658 256
-address: 125/A, CA Commercial Area, California, USA
+title: Pau Tena Vidal
+email: pautena@protonmail.com
 
 menu:
-- {name: About, link: '/about/'}
-- {name: Blog, link: '/blog/'}
 - {name: Portfolio, link: '/portfolio/'}
-- {name: Contact, link: '/contact/'}
 
 
 #-------------------------------
@@ -22,7 +16,7 @@ menu:
 
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
-google-analytics: # UA-XXXXXX-X
+google-analytics: 115573431
 
 
 #-------------------------------
@@ -35,13 +29,11 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Hi! I’m <br> Pau Tena <br> Full Stack developer
 
 social:
-- {icon: "ti-facebook", link: "#"}
-- {icon: "ti-instagram", link: "#"}
-- {icon: "ti-dribbble", link: "#"}
-- {icon: "ti-twitter", link: "#"}
+- {icon: "ti-linkedin", link: "https://www.linkedin.com/in/pau-tena-vidal-73676592/"}
+- {icon: "ti-twitter", link: "https://twitter.com/Pautena91"}
 
 
 #-------------------------------
@@ -49,8 +41,8 @@ social:
 
 # About Section
 blurb:
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
+  If I had to describe myself in one word, it would be curiosity. Ever since I was little, I have always felt a need to know how things work and increase my knowledge to solve everyday problems. What does a day in my life look like? My goal is to make projects work economically by designing and developing new functionalities that satisfy the clients’ wishes and needs.
+  
 blurb-btn-link: '/about'
 blurb-btn-name: know more
 
@@ -150,86 +142,102 @@ services:
 
 # Portfolio Home Section
 portfolio-home-items:
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image : "assets/images/portfolio/abitari.png"
+    name: "Abitari"
+    title: "Improve the productivity of your housekeeping department"
+    description: "Abitari Housekeeping improves the communication of the housekeeping department and automates the routine tasks of a hotel"
+    url: "https://abitari.com/"
     
-  - image : "assets/images/portfolio/item-2.png"
-    url: "#"
+  - image : "assets/images/portfolio/brawl-capped.png"
+    name: "Brawl Capped"
+    title: "Choose the best characters to play Brawl Stars"
+    description: "By analyzing thousands of battles, we selected the best characters for each game mode. +200.000 downloads on Play Store"
+    url: "https://brawlcapped.com"
     
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
-    
-  - image : "assets/images/portfolio/item-4.png"
-    url: "#"
-    
-  - image : "assets/images/portfolio/item-5.png"
-    url: "#"
+  - image : "assets/images/portfolio/ra.png"
+    name: "Hunter"
+    title: "Interact with the real world"
+    description: "Using augmented reality you can offer custom experiences based on geolocation"
+    url: "http://hunterapp.pautena.com/"
 
-
+    
+  - image : "assets/images/portfolio/hardware.png"
+    name: "Hackeyes"
+    title: "A robot controlled by gestures and VR"
+    description: "HackEyes is a robot car controlled by air gestures. With Google Cardboard, the user has a first-person view through the robot’s eyes"
+    url: "https://devpost.com/software/hackeyes-kas4jl"
+    
 # Portfolio Page
 portfolio-label:
 - {
-    title : "UI/UX Design",
-    type : "design"
+    title : "Mobile",
+    type : "Mobile"
   }
 - {
-    title : "BRANDING",
-    type : "branding"
+    title : "Geolocation",
+    type : "Geolocation"
   }
 - {
-    title : "ILLUSTRATION",
-    type : "illustration"
+    title : "Augmented Reality",
+    type : "Augmented Reality"
+  }
+- {
+    title : "Unity",
+    type : "Unity"
   }
 
 portfolio-items:
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+  - title : "Bicimaps"
+    description: "Bicimaps is an application designed to squeeze your bike bonus to the fullest. Through the use of Open Data, it improves the experience using shared bicycles."
+    winner: "DIBA Apps Contest 2015 winner"
+    youtube: "https://www.youtube.com/watch?v=FaQiprtTUEI"
+    url: "http://bicimaps.pautena.com"
     portfolio-type:
-     - type: "design"
-     - type: "illustration"
+     - type: "Mobile"
+     - type: "Geolocation"
       
-  - image : "assets/images/portfolio/item-2.png"
-    url: "#"
+  - title : "Untrail"
+    description: "Untrail is an AR application designed to play sports. After choosing a team users will paint a map of the color of their team as they move."
+    winner: "DIBA Apps Contest 2016 winner"
+    url: "http://untrail.pautena.com"
     portfolio-type:
-      - type: "branding"
+      - type: "Augmented Reality"
+      - type: "Unity"
       
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
+  - title : "Bisafe"
+    description: "Bisafe is an application to prevent theft of your bike. Using wireless technology, it is able to detect the thefts of your bicycle and alert the police. Protect your bike anywhere with Bisafe and do not worry more during your travels."
+    winner: "Smart Cat Challenge 2017 winner"
+    youtube: "https://www.youtube.com/watch?v=rODB8VhUT9k&t=2s"
+    url: "http://appcircus.com/apps/bisafe"
     portfolio-type:
-      - type: "illustration"
+     - type: "Mobile"
+     - type: "Geolocation"
       
-  - image : "assets/images/portfolio/item-6.png"
-    url: "#"
+  - title : "Meet & Eat"
+    description: "Meet new people while competing about who cooks the best food!"
+    winner: "Hack the North 2016 Firebase API winner"
+    repos:
+      - repo: "https://github.com/anrodon/MeetAndEat"
+    url: "https://devpost.com/software/meetandeat"
     portfolio-type:
-      - type: "design"
-      - type: "branding"
+      - type: "Mobile"
       
-  - image : "assets/images/portfolio/item-8.png"
-    url: "#"
+  - title : "Tanks GO"
+    description: "Tanks GO is a real-time multiplayer videogame where tanks fight to be the vehicle with the most points at the end of the game."
+    youtube: "https://www.youtube.com/watch?v=wYKpoKY0_L4"
     portfolio-type:
-      - type: "illustration"
+      - type: "Unity"
       
-  - image : "assets/images/portfolio/item-5.png"
-    url: "#"
+  - title : "FIB Dragon Tower Defense"
+    description: "We love our university and we wanted to develop some game located in there.
+         As catalans, we also love dragons so we mixed this two awesome components
+         to build the ultimate videogame for FIB students"
+    repos:
+      - repo: "https://github.com/pautena/HackUPC_Dragon_Tower_Defense"
+    youtube: "https://www.youtube.com/watch?v=brFpuUoAuU8"
+    url: "https://devpost.com/software/fib-dragon-tower-defense-809fjq"
     portfolio-type:
-      - type: "design"
-      
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
-    portfolio-type:
-      - type: "branding"
-      
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
-      
-  - image : "assets/images/portfolio/item-7.png"
-    url: "#"
-    portfolio-type:
-      - type: "illustration"
+      - type: "Unity"
 
 
 #-------------------------------
