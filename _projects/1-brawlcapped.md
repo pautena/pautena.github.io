@@ -9,7 +9,7 @@ gallery_images:
   - brawlcapped.png
 ---
 
-Brawl Capped is an appliation to help [Brawl Stars](https://supercell.com/en/games/brawlstars/) players to make better decisions in game. With more than 300.000 downloads in Play Store, Brawl Capped has helped players to win his battles!
+Brawl Capped is an application to help [Brawl Stars](https://supercell.com/en/games/brawlstars/) players to make better decisions in game. With more than 300.000 downloads in Play Store, Brawl Capped has helped players to win his battles!
 
 - You can check the website [here](https://brawlcapped.com/)
 - You can check the Android app [here](https://play.google.com/store/apps/details?id=com.pautena.brawlmaps&hl=es_419&gl=US)
