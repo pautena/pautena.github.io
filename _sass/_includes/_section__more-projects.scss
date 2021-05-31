@@ -1,0 +1,39 @@
+
+
+.more-projects {
+  padding: 64px 0 80px;
+  background-color: #f9f9fa;
+
+  .more-projects__header {
+    margin-bottom: 40px;
+
+    .action {
+      display: none;
+      justify-self: end;
+      align-self: center;
+    }
+  }
+
+  .action-bottom {
+    justify-self: center;
+  }
+
+  @include mq(tabletp) {
+    padding: 120px 0 110px;
+
+    .more-projects__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .action {
+        display: block;
+        justify-self: end;
+        align-self: center;
+      }
+    }
+
+    .action-bottom {
+      display: none;
+    }
+  }
+}

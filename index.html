@@ -1,9 +1,68 @@
 ---
 layout: default
+overtitle: Full Stack developer
+title: Hi! I’m Pau Tena
+description: 
+featured_image: /images/social.jpg
 ---
 
-{% include hero-section.html %}
+<div class="page-home">
 
-{% include about-section.html %}
+	{% if site.data.settings.hero_settings.background_image %}
+	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
+	{% endif %}
 
-{% include portfolio-section.html %}
+	<section class="hero">
+		<div class="wrap grid">
+			<div class="title">
+				<p class="subtitle">{{ page.overtitle }}</p>
+				<h1>{{ page.title }}</h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="listing">
+		<div class="wrap">
+
+			{% for project in site.projects %}
+
+			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
+
+			<article class="project__preview">
+				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
+
+				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
+					{% for image in project.gallery_images %}
+					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+					{% endfor %}
+				</div>
+
+				<div class="project__content grid" style="border-color: {{ accent_color }}">
+					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
+					<p class="project__description --small">
+						{{ project.description }}
+						{% if project.link %}
+							<a href="{{ project.link }}" class="project__link button--text --right"
+							style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Project</a>
+						{% else %}
+							<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
+								style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Case Study</a>
+						{% endif %}
+					</p>
+				</div>
+			</article>
+
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="more-projects">
+		<div class="wrap grid">
+			<header class="more-projects__header">
+				<h4>Do you want to see more projects?</h4>
+				<a href="{{ '/more-projects' | relative_url }}" class="action button--text--accent --right">All projects</a>
+			</header>	
+			<a href="{{ '/more-projects' | relative_url }}" class="action-bottom button--text--accent --right">All projects</a>
+		</div>
+	</section>
+</div>

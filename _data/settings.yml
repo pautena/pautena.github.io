@@ -1,301 +1,185 @@
-#-------------------------------
-# General Site Settings
+basic_settings:
+  site_title: Pau Tena
+  favicon_image:
 
-title: Pau Tena Vidal
-email: pautena@protonmail.com
+header_settings:
+  logo_image: 
+  logo_width: 100
 
-menu:
-- {name: Portfolio, link: '/portfolio/'}
+menu_settings:
+  menu_items:
+    - title: 'Home'
+      url: '/'
+    - title: 'More projects'
+      url: '/more-projects/'
 
+footer_settings:
+  logo_image: 
+  logo_width: 100
+  tagline: A developer personal website
 
-#-------------------------------
-# Google Analytics Section
+hero_settings:
+  background_image: /images/backgrounds/background-hero.svg
 
-# Analytics helps you understand who visits your website.
-# Learn more at: http://support.google.com/analytics/answer/1008065
+post_settings:
+  grid_spacing: 10
 
-# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+contact_settings:
+  email_address: ''
+  form_action: 'https://formspree.io/hello@jekyllthemes.io'
+  confirmation_url: '/thanks'
+  email_subject: 'Contact form submission'
+  send_button_text: 'Get in Touch'
 
-google-analytics: 115573431
+social_settings:
+  facebook_url: ''
+  twitter_url: ''
+  instagram_url: ''
+  snapchat_url: ''
+  youtube_url: ''
+  google-plus_url: ''
+  vimeo_url: ''
+  pinterest_url: ''
+  medium_url: ''
+  quora_url: ''
+  amazon_url: ''
+  apple_url: ''
+  android_url: ''
+  tumblr_url: ''
+  dribbble_url: ''
+  behance_url: ''
+  deviantart_url: ''
+  github_url: ''
+  reddit_url: ''
+  flickr_url: ''
+  etsy_url: ''
+  kickstarter_url: ''
+  soundcloud_url: ''
+  spotify_url: ''
+  bandcamp_url: ''
+  linkedin_url: ''
 
+color_settings:
+  background_color: '#ffffff'
+  background_alt_color: '#f4f5f6'
+  text_dark_color: '#202224'
+  text_medium_color: '#6C7A89'
+  text_light_color: '#AEB3BB'
+  accent_color: '#4C60E6'
+  border_color: '#ECEDEF'
+  error_color: '#D64541'
 
-#-------------------------------
-# Comment Section (Disqus)
+font_settings:
+  font_embed: '<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700|Ubuntu+Mono:400,700" rel="stylesheet">'
+  title_font: 'Rubik, sans-serif'
+  body_font: '"Ubuntu Mono", sans-serif'
+  regular_weight: 400
+  bold_weight: 700
+  site_title:
+    small_size: 30
+    medium_size: 40
+    large_size: 45
+    weight: 700
+    letter_spacing: -0.02
+  menu:
+    small_size: 30
+    medium_size: 15
+    large_size: 17
+    weight: 600
+    letter_spacing: 0
+  h1:
+    size: 64
+    size_small: 42
+    weight: 700
+    letter_spacing: -1.5
+    letter_spacing_small: -1.2
+    line_height: 72
+    line_height_small: 48
+  h2:
+    size: 48
+    size_small: 36
+    weight: 700
+    letter_spacing: -1.6
+    letter_spacing_small: -1.04
+    line_height: 56
+    line_height_small: 44
+  h3:
+    size: 40
+    size_small: 30
+    weight: 700
+    letter_spacing: -1.4
+    letter_spacing_small: -0.54
+    line_height: 48
+    line_height_small: 36
+  h4:
+    size: 32
+    size_small: 28
+    weight: 700
+    letter_spacing: -1
+    letter_spacing_small: -0.6
+    line_height: 36
+  h5:
+    small_size: 17
+    medium_size: 20
+    large_size: 20
+    weight: 700
+    letter_spacing: 0
+    line_height: 1.6
+  h6:
+    small_size: 17
+    medium_size: 20
+    large_size: 20
+    weight: 700
+    letter_spacing: 0
+    line_height: 1.6
+  subtitle:
+    size: 22
+    size_small: 20
+    weight_regular: 400
+    weight_heavy: 500
+    letter_spacing: 0.16
+    letter_spacing_small: 0.2
+    line_height: 32
+    line_height_small: 28
+  p:
+    size: 18
+    size_small: 17
+    weight: 400
+    letter_spacing: 0.04
+    letter_spacing_small: 0
+    line_height: 28
+  p_small:
+    size: 16
+    size_small: 15
+    weight: 400
+    letter_spacing: 0
+    line_height: 24
+  label:
+    size: 14
+    small_size: 12
+    weight: 500
+    letter_spacing: 0.8
+    small_letter_spacing: 0.5
+    line_height: 16
+  footnote:
+    size: 13
+    weight: 400
+    letter_spacing: -0.04
+    line_height: 12
+  blockquote:
+    small_size: 22
+    medium_size: 30
+    large_size: 38
+    weight: 500
+    letter_spacing: -0.02
+    line_height: 1.6
+  buttons:
+    weight: 500
+    letter_spacing: 0.4
 
-disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
-
-
-#-------------------------------
-# Hero Section
-
-hero:
-  hero-title: Hi! I’m <br> Pau Tena <br> Full Stack developer
-
-social:
-- {icon: "ti-linkedin", link: "https://www.linkedin.com/in/pau-tena-vidal-73676592/"}
-- {icon: "ti-twitter", link: "https://twitter.com/Pautena91"}
-
-
-#-------------------------------
-# About (Section and Page)
-
-# About Section
-blurb:
-  If I had to describe myself in one word, it would be curiosity. Ever since I was little, I have always felt a need to know how things work and increase my knowledge to solve everyday problems. What does a day in my life look like? My goal is to make projects work economically by designing and developing new functionalities that satisfy the clients’ wishes and needs.
-  
-blurb-btn-link: '/about'
-blurb-btn-name: know more
-
-
-# About Page
-
-# Work Process Section
-work-process:
-  - title : "Research and Plan"
-    icon : "assets/images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
-  - title : "Design and Develop"
-    icon : "assets/images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
-  - title : "Deliver"
-    icon : "assets/images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-
-# My Team Section
-team:
-  - title : "Jack Schenziwe"
-    image : "assets/images/team/member-1.png"
-    designation : "Project Manager"
-    
-  - title : "Julias Carlie"
-    image : "assets/images/team/member-2.png"
-    designation : "Web Developer"
-    
-  - title : "John Doe"
-    image : "assets/images/team/member-3.png"
-    designation : "Designer"
-
-
-#-------------------------------
-# Skills Section
-
-skills-title: Skills
-skills:
-- {name: Web Design, color: '#fdb157', value: '90%'}
-- {name: Logo Design, color: '#9473e6', value: '60%'}
-- {name: After Effects, color: '#bdecf6', value: '80%'}
-- {name: Web App, color: '#ffbcaa', value: '70%'}
-
-
-#-------------------------------
-# Exprerience Section
-
-experience-title: Experience
-experience:
-- {name: Junior UX Designer, icon: 'icon-1.png', date: 'Jan 2007 - Feb 2009', organization: 'WEBEX'}
-- {name: UX & UI Designer, icon: 'icon-2.png', date: 'Mar 2009 - Aug 2014', organization: 'AUGMEDIX'}
-- {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
-
-
-#-------------------------------
-# Education Section
-
-education-title: Education
-education:
-- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
-- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-- {name: Higher Secondary Certificat, date: '2000', organization: 'Cardiff School'}
-- {name: Secondary School Certificate, date: '1998', organization: 'Cardiff School'}
-
-
-#-------------------------------
-# Services Section
-
-services-title: Services
-services:
-- {
-    name: UI Design,
-    icon: ti-palette,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    active: # Add true to select section
-  }
-- {
-    name: UX Design,
-    icon: ti-vector,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    active: true # Add true to select section
-  }
-- {
-    name: Interaction Design,
-    icon: ti-panel,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    active: # Add true to select section
-  }
-
-
-
-#-------------------------------
-# Portfolio (Section and Page)
-
-# Portfolio Home Section
-portfolio-home-items:
-  - image : "assets/images/portfolio/abitari.png"
-    name: "Abitari"
-    title: "Improve the productivity of your housekeeping department"
-    description: "Abitari Housekeeping improves the communication of the housekeeping department and automates the routine tasks of a hotel"
-    url: "https://abitari.com/"
-    
-  - image : "assets/images/portfolio/brawl-capped.png"
-    name: "Brawl Capped"
-    title: "Choose the best characters to play Brawl Stars"
-    description: "By analyzing thousands of battles, we selected the best characters for each game mode. +200.000 downloads on Play Store"
-    url: "https://brawlcapped.com"
-    
-  - image : "assets/images/portfolio/ra.png"
-    name: "Hunter"
-    title: "Interact with the real world"
-    description: "Using augmented reality you can offer custom experiences based on geolocation"
-    url: "http://hunterapp.pautena.com/"
-
-    
-  - image : "assets/images/portfolio/hardware.png"
-    name: "Hackeyes"
-    title: "A robot controlled by gestures and VR"
-    description: "HackEyes is a robot car controlled by air gestures. With Google Cardboard, the user has a first-person view through the robot’s eyes"
-    url: "https://devpost.com/software/hackeyes-kas4jl"
-    
-# Portfolio Page
-portfolio-label:
-- {
-    title : "Mobile",
-    type : "Mobile"
-  }
-- {
-    title : "Geolocation",
-    type : "Geolocation"
-  }
-- {
-    title : "Augmented Reality",
-    type : "Augmented Reality"
-  }
-- {
-    title : "Unity",
-    type : "Unity"
-  }
-
-portfolio-items:
-  - title : "Bicimaps"
-    description: "Bicimaps is an application designed to squeeze your bike bonus to the fullest. Through the use of Open Data, it improves the experience using shared bicycles."
-    winner: "DIBA Apps Contest 2015 winner"
-    youtube: "https://www.youtube.com/watch?v=FaQiprtTUEI"
-    url: "http://bicimaps.pautena.com"
-    portfolio-type:
-     - type: "Mobile"
-     - type: "Geolocation"
-      
-  - title : "Untrail"
-    description: "Untrail is an AR application designed to play sports. After choosing a team users will paint a map of the color of their team as they move."
-    winner: "DIBA Apps Contest 2016 winner"
-    url: "http://untrail.pautena.com"
-    portfolio-type:
-      - type: "Augmented Reality"
-      - type: "Unity"
-      
-  - title : "Bisafe"
-    description: "Bisafe is an application to prevent theft of your bike. Using wireless technology, it is able to detect the thefts of your bicycle and alert the police. Protect your bike anywhere with Bisafe and do not worry more during your travels."
-    winner: "Smart Cat Challenge 2017 winner"
-    youtube: "https://www.youtube.com/watch?v=rODB8VhUT9k&t=2s"
-    url: "http://appcircus.com/apps/bisafe"
-    portfolio-type:
-     - type: "Mobile"
-     - type: "Geolocation"
-      
-  - title : "Meet & Eat"
-    description: "Meet new people while competing about who cooks the best food!"
-    winner: "Hack the North 2016 Firebase API winner"
-    repos:
-      - repo: "https://github.com/anrodon/MeetAndEat"
-    url: "https://devpost.com/software/meetandeat"
-    portfolio-type:
-      - type: "Mobile"
-      
-  - title : "Tanks GO"
-    description: "Tanks GO is a real-time multiplayer videogame where tanks fight to be the vehicle with the most points at the end of the game."
-    youtube: "https://www.youtube.com/watch?v=wYKpoKY0_L4"
-    portfolio-type:
-      - type: "Unity"
-      
-  - title : "FIB Dragon Tower Defense"
-    description: "We love our university and we wanted to develop some game located in there.
-         As catalans, we also love dragons so we mixed this two awesome components
-         to build the ultimate videogame for FIB students"
-    repos:
-      - repo: "https://github.com/pautena/HackUPC_Dragon_Tower_Defense"
-    youtube: "https://www.youtube.com/watch?v=brFpuUoAuU8"
-    url: "https://devpost.com/software/fib-dragon-tower-defense-809fjq"
-    portfolio-type:
-      - type: "Unity"
-
-
-#-------------------------------
-# Testimonials Section
-
-testimonial-items:
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation : "CEO, Funder"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-
-#-------------------------------
-# Client Slider Section
-
-client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
-
-#-------------------------------
-# Contact Section
-
-contact-title: Contact Info
-contact-email: steve.fruits@email.com
+advanced_settings:
+  ajax_loading: true
+  analytics_code: ""
+  custom_styles: ""
+  header_js: ""
+  footer_js: ""
