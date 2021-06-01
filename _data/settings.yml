@@ -10,8 +10,8 @@ menu_settings:
   menu_items:
     - title: 'Home'
       url: '/'
-    - title: 'More projects'
-      url: '/more-projects/'
+    - title: 'Projects'
+      url: '/projects/'
 
 footer_settings:
   logo_image: 

@@ -5,7 +5,7 @@ description: A developer personal website.
 featured_image: /images/social.jpg
 ---
 
-<div class="page-more-projects">
+<div class="page-projects">
 	<header class="header--single">
 		<div class="wrap">
 			<h1 class="header__title">More projects</h1>
@@ -15,20 +15,22 @@ featured_image: /images/social.jpg
 
 	<section class="listing">
 		<div class="wrap">
-			{% for project in site.more_projects %}
+			{% for project in site.projects %}
 				{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
 				<article class="project__preview">
 					<h3 class="project__title">{{project.title}}</h3>
 					<div class="project__content" style="border-color: {{ accent_color }}">
 						<p>{{project.description}}</p>
-						{% if project.more %}
-							<a href="{{ project.more }}" class="project__link button--text --right" style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View more</a>
-						{% endif %}
-						{% if project.video %}
+						{% if project.tag %}<p><i>{{project.tag}}</i></p>{% endif %}
+						{% if project.link %}
+							<a href="{{ project.link }}" class="project__link button--text --right" style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View more</a>
+						{% elsif project.video %}
 							<a href="{{ project.video }}" class="project__link button--text --right" style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View video</a>
-						{% endif %}
-						{% if project.repository %}
+						{% elsif project.repository %}
 							<a href="{{ project.repository }}" class="project__link button--text --right" style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View repository</a>
+						{% else %}
+							<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
+								style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Case Study</a>
 						{% endif %}
 					</div>
 				</article>

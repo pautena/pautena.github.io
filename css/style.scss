@@ -165,7 +165,6 @@ $baseurl: '{{ site.baseurl }}';
 @import "_pages/_page__blog";
 @import "_pages/_page__post";
 @import "_pages/_page__project";
-@import "_pages/_page__more_projects";
 
 @import "_includes/_component__header";
 @import "_includes/_component__footer";
@@ -176,7 +175,6 @@ $baseurl: '{{ site.baseurl }}';
 @import "_includes/_component__post-card";
 @import "_includes/_section__about";
 @import "_includes/_section__recent-posts";
-@import "_includes/_section__more-projects";
 
 
 

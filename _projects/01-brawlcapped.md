@@ -5,6 +5,7 @@ date: 2019-07-24 00:00:00
 description: By analyzing thousands of battles, we selected the best characters for each game mode. +300.000 downloads on Play Store
 featured_image: brawlcapped.png
 accent_color: '#4C60E6'
+main: true
 gallery_images:
   - brawlcapped.png
 ---

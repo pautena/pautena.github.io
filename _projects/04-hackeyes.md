@@ -5,6 +5,7 @@ date: 2019-07-24 00:00:00
 description: HackEyes is a robot car controlled by air gestures. With Google Cardboard, the user has a first-person view through the robot’s eyes
 featured_image: hackeyes.png
 accent_color: '#4C60E6'
+main: true
 gallery_images:
   - hackeyes.png
 ---
